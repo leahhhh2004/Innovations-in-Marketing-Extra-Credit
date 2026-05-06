@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Antonio Reynoso For Congress</title>
+
+	<style>
+
+		h1 {
+			font-family: arial;
+			font-size: 35px;
+			color: white;
+		}
+
+		h2 {
+			font-family: arial;
+			font-size: 30px;
+			color: white;
+		}
+
+		h3 {
+			font-family: arial;
+			font-size: 25px;
+			color: #f0e6ff;
+			font-weight: bold;
+
+		}
+
+		body{
+			background-color: rebeccapurple;
+		}
+
+		#logo {
+			width: 100%;
+			max-height: 200px;
+			object-fit: contain;
+
+		}
+
+		#logo2 {
+			height: auto;
+			width: 40px;
+
+		}
+
+		#headshot {
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+			border-radius: 20px;
+
+		}
+
+		.section {
+			width: 100%;
+			padding: 15px 30px;
+			margin: 40px;
+			box-sizing: border-box;
+			border-radius: 10px;
+		}
+
+		#header {
+			display: grid;
+			grid-template-columns: 1fr;
+			align-items: center;
+			justify-content: space-between;
+			background-color: white;
+			gap: clamp(10px, 3vw, 40px);
+			padding-top: 100px;	
+
+		}
+
+		main{
+			padding-top: 80px;
+		}
+
+		/*screen size */
+		@media (min-width: 768px) {
+			#header {
+				grid-template-columns: 1fr 1fr;
+			}
+
+			 #about, #issues {
+	        margin: 0;
+	        width: 100%;
+	    }
+
+		}
+
+		@media (min-width: 1024px) {
+			#header {
+				grid-template-columns: 1fr 1fr;
+			
+			}
+
+			#headshot {
+				max-height: 550px;
+			}
+		}
+
+		@media (max-width: 420px) {
+			#navbar {
+				flex-direction: column;
+				gap: 10px;
+				text-align: center;
+			}
+
+			.nav-links {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+			}
+
+			#navbar a {
+				margin-left: 0;
+			}
+
+			p {
+				font-size: 20px;
+			}
+		}
+
+		#navbar {
+			display: flex;
+		    justify-content: space-between;
+		    align-items: center;
+		    background-color: #2f1a55; 
+		    color: white;
+		    position: fixed;
+		    width: 100%;
+			box-sizing: border-box;
+			border-radius: 10px;
+			padding: 15px;
+
+			
+			top: 0;
+		}
+
+		#navbar a {
+		    color: white;
+		    text-decoration: none;
+		    margin-left: 20px;
+		    font-family: Arial, sans-serif;
+		    font-size: 16px;
+		    top: 0;
+		}
+
+		#navbar a:hover {
+		    text-decoration: underline;
+		}
+
+		a {
+			font-family: arial;
+			font-size: 20px;
+			color: white;
+		}
+
+		a:focus { 
+			outline: 2px solid yellow;
+		}
+
+		.skip-link {
+		    position: absolute;
+		    top: -40px;
+		}
+
+		.skip-link:focus {
+		    top: 10px;
+		}
+
+
+		#about, #issues {
+			align-items: center;
+			text-align: center;
+			padding: 20px;
+			margin: 20px;
+			display: grid;
+			grid-template-columns: 1fr;
+			justify-items: center;
+
+		}
+
+		#container {
+			align-items: center;
+
+		}
+
+		p {
+			font-family: arial;
+			font-size: 24px;
+			color: white;
+			padding: 10px 0;
+			margin: 20px 0;
+			line-height: 1.5;
+		}
+
+		section {
+			padding: 10px;
+		}
+
+		#issues {
+			background-color: #005f87;
+
+		}
+
+		.issuesimages {
+			width: auto;
+			height: 300px;
+			border-radius: 10px;
+		}
+
+		footer {
+			height: 300px;
+			width: 100%;
+			align-items: center;
+			text-align: center;
+			padding: 30px;
+			margin: 10px;
+		}
+
+		.icon {
+			height: 50px;
+			width: 50px;
+		}
+
+		.contact {
+			color: white;
+		}
+
+		.nav-links {
+		    display: flex;
+		    list-style: none;
+		    margin: 0;
+		    padding: 0;
+		    gap: 20px; 
+		}
+
+		.nav-links li {
+		    display: inline;
+		}
+
+		.nav-links a {
+		    text-decoration: none;
+		}
+
+
+		
+
+	</style>
+</head>
+<body>
+	<a href="#main-content" class="skip-link">Skip to main content</a>
+
+	<main id="main-content">
+
+		<nav aria-label="Primary navigation" id="navbar" >
+		    <section class="nav-left">
+		    	<img id="logo2" src="media/AntonioReynosoLogo.png" alt="Blue blockletters that read: !Antonio Reynoso for Congress! The exclamation points are in red.">
+		    </section>
+
+		    <ul class="nav-links">
+		       <li><a href="#header">Home</a></li>
+		        <li><a href="#about">Learn About Antonio</a></li>
+		        <li><a href="#issues">Issues</a></li>
+		        <li><a href="#footer">Contact</a></li>
+		    </ul>
+		</nav>
+
+		<section id="header" class="section">
+
+			<img id="logo" src="media/AntonioReynosoLogo.png" alt="Blue blockletters that read: !Antonio Reynoso for Congress! The exclamation points are in red.">
+
+			<img id="headshot" src="media/AntonioReynosoHeadshot.jpg" alt="Antonio Reynoso, a brown-skinned man, is wearing a blue plaid blazer, a white button-down shirt, and a blue polka dot tie. He is standing front of three flags, one is the United States flag.">
+		</section>
+
+		<section id="about" class="section">
+
+			<h2>About Antonio Reynoso</h2>
+
+			<img id="class"style="border-radius: 10px; padding: 30px;"src="media/AntonioProtesting.png" alt=" Antonio Reynoso, a brown-skinned man with glasses holding his hand up in a fist. He is surrounded by a group of young women holding up signs as they march down the street. ">
+
+			<p>Antonio has always stood up to powerful interests. He fought the corrupt Brooklyn political machine. He also took on corporate polluters and kicked ICE (Immigration and Customs Enforcement) off Riker's Island.
+			</p>
+			<p>He never backs down from important fights for New Yorkers. He delivers real results for working families.
+			</p>
+
+			<p>Now, he's running for United States Congress to take on those same fights in Washington. He will challenge corporate interests and fight against Trump’s overreach and MAGA (Make America Great Again) extremism. He’ll use all tools to abolish ICE, tax the rich, and stop the genocide in Gaza. He also aims to fully fund healthcare, childcare, and housing to help working families thrive.</p>
+
+		</section>
+
+		<section id='issues' class="section">
+			<h2>Issues Antonio is Fighting For</h2>
+
+			<h3>Taking on ICE</h3>
+
+			<img class='issuesimages'src="media/AntonioGroup.jpg" alt="Antonio Reynoso, a brown-skinned man, is wearing a blue plaid blazer oitside of th 7 train station. He is next to a a group of 4 people who are all having a conversation. There is a tall white man with glasses in a black jacket, next to him is a black women with a pink sweater and gray hair. Next to her is an asian man in a gray jacket. Next to Antonio is a lady in a denim jacket.  ">
+
+			<p>ICE (Immigration and Customs Enforcement)is terrorizing our communities. It rips families apart and targets immigrants in New York. Antonio has never stood by while that happens. He stopped NYPD's (New York Police Department) coordination with ICE on Rikers Island.</p>
+
+			<p>This helped thousands of immigrants get work permits, find legal help, and access resources to build their lives here. Antonio will work in Congress to end ICE. He will use every tool to protect immigrant families. </p>
+
+
+			<h3>Housing Crisis</h3>
+
+			<img class='issuesimages'src="media/AntonioHousing.jpg" alt="Antonio Reynoso, a brown-skinned man, is smiling while wearing a blue plaid blazar, a blue and red stripped tie, and a white button down shirt. He is standing outside next to a women who is speaking to him outside of a residencial building.">
+
+			<p>Developers and speculators are profiting, while working families are leaving New York. That’s not an accident; it’s a rigged system. Antonio has tackled the system directly. He fights for affordable housing in every neighborhood.</p>
+
+			<p>He pushes bold plans to truly solve the crisis, not just manage it. In Congress, he will work to repeal the Faircloth Amendment. He'll invest in public housing and ensure working people can afford to stay in their communities.</p>
+
+
+			<h3>Pollution</h3>
+
+			<img class='issuesimages'src="media/AntonioBackyard.jpg" alt="Antonio Reynoso, a brown-skinned man, is wearing a blue knitted sweater standing outside. He is next to a women wearing red glasses with a blue shirt that reads: Earth day every day.">
+
+			<p>For too long, corporate polluters have treated working-class communities like dumping grounds. Antonio grew up breathing that reality, and he’s spent his career fighting back. He made important changes. They cut pollution.</p>
+
+			<p>They hold companies accountable. They protect frontline workers. In Congress, he will fight against polluters. He'll back clean energy and protect everyone's right to clean air and water.</p>
+
+			
+
+		</section>
+
+		<footer id="footer">
+			<h2>Contact Antonio</h2>
+			<h3 class='contact'>Social Media</h3>
+			<a href="https://www.instagram.com/reynoso.brooklyn" aria-label="Antonio Reynoso on Instagram">
+			<img class='icon' src="media/instagram.png" alt="logo for the social media application named Instagram. A box with a lens in the middle that resembles a camera"></a>
+
+			<a href="https://x.com/reynosobrooklyn" aria-label='Antonio Reynoso on twitter'>
+			<img class='icon' src="media/x.png" alt="logo fo rthe social media application X. Black outline of the letter x" ></a>
+
+			<h3 class='contact'>Email</h3>
+			<p>info@reynosoforcongress.com</p>
+	
+		</footer>
+
+
+
+	</main>
+	
+	
+
+</body>
+</html>
